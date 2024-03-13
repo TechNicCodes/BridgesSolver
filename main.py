@@ -14,6 +14,7 @@ gridWidth = 10
 
 # TODO: Ask the user to input the size of their puzzle
 
+
 gameGrid = createGrid(gridHeight, gridWidth)
 
 # TODO: Now present user with GUI with a text box in each square of the grid.

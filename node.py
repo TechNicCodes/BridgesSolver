@@ -15,6 +15,14 @@ class Node:
     adjacentNodes: list    # a list of other nodes which the current node can see in the grid
     bridges: list    # a list of nodes that are connected to the current node
 
+    # TODO: Create some necessary methods for nodes
+
+    # Reduces the value of a node. Used when creating a bridge between nodes
+    @classmethod
+    def changeValue(cls):
+        Node.nodeValue -= 1
+    
+    
 
 
 
