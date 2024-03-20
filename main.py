@@ -6,20 +6,24 @@ Description: Runs the application. Creates the grid, asks for the input, then ca
 """
 
 from grid import Grid
+from node import Node
 
 def main():
 
     test_file_path = "TestPuzzles/Test1.txt" # CHOOSE TEST CASE HERE
 
-    # Read in the test grid
+    # Read in the test grid and convert it to a grid of nodes and a list of nodes
     my_grid = Grid(test_file_path)
-    print(my_grid.grid)
+    node_grid, node_list = Grid.grid_with_nodes(my_grid)
 
-    #TODO: Convert my_grid into a grid of nodes. Create each node. Will need to create each node before I am able 
-    # to calculate each nodes adjacent nodes. 
-    for row in my_grid.grid:
-        for space in row:
-            print(space)
+    # Uncomment to print all nodes and empty spaces in the grid
+#    for row in node_grid:
+#        for node in row:
+#            print(node)
+    # Uncomment to just print a list of nodes
+#    for item in node_list:
+#        print(item)
+
 
     #TODO: Run solving logic on the grid
 
